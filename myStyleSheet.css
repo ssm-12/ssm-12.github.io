@@ -1,0 +1,42 @@
+.cards{
+  background-color:white;
+  border-radius: 20px 20px 20px 20px;
+  height: 50vh;
+  margin-bottom: 1vmax;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/standard_background2.jpg");
+
+    /* Set a specific height */
+    min-height: 100vh;
+    top: 0;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+  background-image: url("images/standard_background2.jpg");
+  background-repeat: round;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.dp{
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman";
+}
+
+.opac{
+  opacity: 0.7;
+}

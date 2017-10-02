@@ -40,3 +40,9 @@ img {
 .opac{
   opacity: 0.7;
 }
+
+#aboutMe{
+  color: black;
+  text-align: center;
+  font-size: 2vmin;
+}

@@ -1,9 +1,15 @@
 @media (max-width: 500px) {
-    body{font-size: 10px;}
+    body{
+      font-size: 10px;
+      padding: 1.5em;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
-    body{font-size: 12px;}
+    body{
+      font-size: 12px;
+      padding: 1.5em;
+    }
 }
 
 @media (min-width: 769px) {

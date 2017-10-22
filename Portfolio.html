@@ -1,157 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Souvik Roy - Portfolio</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- My StyleSheet -->
-<link rel="stylesheet" href="myStyleSheet.css">
-<link rel="stylesheet" href="aos-master/dist/aos.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Souvik Roy - Portfolio</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- My StyleSheet -->
+  <link rel="stylesheet" href="myStyleSheet.css">
+  <link rel="stylesheet" href="aos-master/dist/aos.css" />
 </head>
 
 <body >
   <script src="aos-master/dist/aos.js"></script>
   <script>
-    AOS.init({
-      easing: 'ease-in-out-sine'
-    });
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
   </script>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">myPortfolio</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">myPortfolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="parallax">
-  <div class="container dp">
-    <div class="row">
-        <img src="images/2010BCA661.jpg" class="img-circle" alt="Cinque Terre" width="150" height="150">
+  <div class="parallax">
+    <div class="container dp">
+      <div class="row">
+        <img id="profilePic" src="images/2010BCA661.jpg" class="img-circle" alt="Cinque Terre" width="150" height="150">
         <h2>Souvik Roy</h2>
         <div id="aboutMe" class="centered">
           <p>I'm a Software Engineer having experience of more than 2 years in the field of software/Web Application development</p>
         </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="skillContainer" class="container opac">
-  <div class="row">
-    <div id="skills" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
-      <h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills</h4>
-      <div class="row">
+  <div id="skillContainer" class="container opac">
+    <div class="row">
+      <div id="skills" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
+        <h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills</h4>
+        <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-              <div id="coreSkills" class="cards-inverse">
-                  <h5>Programming Skills</h5>
-                  C
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
-                  </div>
-
-                  C++
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%"></div>
-                  </div>
-
-                  C#
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width:82%"></div>
-                  </div>
-
-                  HTML5
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
-                  </div>
-
-                  CSS
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
-                  </div>
-
-                  JavaScript
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
-                  </div>
-
-                  Bootstrap
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width:92%"></div>
-                  </div>
-
-                  .NET
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
-                  </div>
+            <div id="coreSkills" class="cards-inverse">
+              <h5>Programming Skills</h5>
+              C
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
               </div>
+              C++
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%"></div>
+              </div>
+              C#
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width:82%"></div>
+              </div>
+              HTML5
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+              </div>
+              CSS
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+              </div>
+              JavaScript
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+              </div>
+              Bootstrap
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width:92%"></div>
+              </div>
+              .NET
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+              </div>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div id="dbSkills" class="cards-inverse">
-                <h5>Databases</h5>
-                SQL Server
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%"></div>
-                </div>
-
-                SQL Lite
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
-                </div>
-
-                Oracle
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
-                </div>
-
-                PLSQL
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
-                </div>
+              <h5>Databases</h5>
+              SQL Server
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%"></div>
+              </div>
+              SQL Lite
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+              </div>
+              Oracle
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+              </div>
+              PLSQL
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+              </div>
             </div>
             <div id="sourceControlSkills" class="cards-inverse">
-                <h5>Source Control</h5>
-                GIT
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
-                </div>
-
-                SVN
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
-                </div>
-
-                TFS (Team Foundation Server)
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width:78%"></div>
-                </div>
+              <h5>Source Control</h5>
+              GIT
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+              </div>
+              SVN
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+              </div>
+              TFS (Team Foundation Server)
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width:78%"></div>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="row">
+        </div>
+        <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div id="learningSkills" class="cards-inverse">
               <h5>Learning</h5>
@@ -195,17 +183,122 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </div>
-
-    <div id="projects" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
-
-    </div>
-
-    <div id="education" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
-
-    </div>
-
   </div>
+
+  <div id="proSkills" class="container opac">
+    <div class="row">
+      <div id="companies" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-up-right">
+        <h4><span class="glyphicon glyphicon-pencil"></span> Professional Career</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-up-right">
+            <div id="iGate" class="cards-inverse">
+              <div class="card">
+                <div class="card-block">
+                  <h4>iGate Global Solutions</h4>
+                  <p class="card-text" style="width: 50rem">
+                    <b>Designation:</b> Software Engineer </br>
+                    <b>Duration:</b> Dec,2013 - Dec,2015 </br>
+                    <b>No. of Projects Assigned: </b>2
+
+                  </p>
+                  <a href="https://www.capgemini.com/in-en/what-we-do/group-overview/capgemini-technology-services-india-limited-formerly-known-as-igate-global-solutions-limited/" target="_blank" class="btn btn-primary">Link to Company Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-up-left">
+            <div id="gamut" class="cards-inverse">
+              <div class="card">
+                <div class="card-block">
+                  <h4>Gamut Infosystems Ltd.</h4>
+                  <p class="card-text" style="width: 50rem">
+                    <b>Designation:</b> Software Engineer </br>
+                    <b>Duration:</b> Jul,2017 - Till Date </br>
+                    <b>No. of Projects Assigned:</b> 1
+
+                  </p>
+                  <a href="http://www.farvisionerp.com/about-us/" target="_blank" class="btn btn-primary">Link to Company Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="awards" class="container opac">
+    <div class="row">
+      <div id="achievements" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-up-right">
+        <h4><span class="glyphicon glyphicon-certificate"></span> Achievements &amp; Awards</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+            <div id="award1" class="cards-inverse">
+              <img id="greenBelt" src="images/greenBelt.jpg" width="100%" data-toggle="modal" data-target="#myModal">
+              <i>(Double Click to View Certificate)</i>
+              <hr>
+              <h5>iEvolve Green Belt Certificate</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+            <div id="award2" class="cards-inverse">
+              <img id="kaizen" src="images/kaizen.jpg" width="100%" data-toggle="modal" data-target="#myModal2">
+              <i>(Double Click to View Certificate)</i>
+              <hr>
+              <h5>iEvolve Kaizen Certificate</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+            <div id="award3" class="cards-inverse">
+              <img id="pob" src="images/trophy.png" width="100%">
+              <hr>
+              <h5>Pat-on-the-Back Award</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">iEvolve Green Belt Certificate</h4>
+        </div>
+        <div class="modal-body">
+          <img src="images/greenBelt.jpg" alt="Image Not Found" width="100%">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">iEvolve Green Belt Certificate</h4>
+        </div>
+        <div class="modal-body">
+          <img src="images/kaizen.jpg" alt="Image Not Found" width="100%">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Modal Ends here -->
+
 </div>
 
 </body>

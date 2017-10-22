@@ -81,7 +81,10 @@ body{
 img {
     display: block;
     margin: 0 auto;
-    margin-top: 10vh;
+}
+
+#profilePic{
+  margin-top: 10vh;
 }
 
 .dp{
@@ -106,4 +109,14 @@ img {
 
 .centered{
   margin: 0 auto;
+}
+
+pre{
+  color: green;
+  background-color: black;
+
+}
+
+#greenBelt{
+  margin-top: 0 !important;
 }

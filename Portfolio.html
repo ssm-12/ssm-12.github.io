@@ -13,6 +13,33 @@
   <!-- My StyleSheet -->
   <link rel="stylesheet" href="myStyleSheet.css">
   <link rel="stylesheet" href="aos-master/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </head>
 
 <body >
@@ -36,13 +63,10 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#skillContainer">Skills</a></li>
+          <li><a href="#proSkills">Professional Career</a></li>
+          <li><a href="#awards">Achievements &amp; Awards</a></li>
+          <li><a href="#contact">Contact Details</a></li>
         </ul>
       </div>
     </div>
@@ -65,7 +89,7 @@
       <div id="skills" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
         <h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills</h4>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-right">
             <div id="coreSkills" class="cards-inverse">
               <h5>Programming Skills</h5>
               C
@@ -102,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-left">
             <div id="dbSkills" class="cards-inverse">
               <h5>Databases</h5>
               SQL Server
@@ -140,7 +164,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-right">
             <div id="learningSkills" class="cards-inverse">
               <h5>Learning</h5>
               Angular JS
@@ -164,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-left">
             <div id="OS" class="cards-inverse">
               <h5>Operating System</h5>
               Linux
@@ -190,7 +214,7 @@
 
   <div id="proSkills" class="container opac">
     <div class="row">
-      <div id="companies" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-up-right">
+      <div id="companies" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-in">
         <h4><span class="glyphicon glyphicon-pencil"></span> Professional Career</h4>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" data-aos="fade-up-right">
@@ -198,7 +222,7 @@
               <div class="card">
                 <div class="card-block">
                   <h4>iGate Global Solutions</h4>
-                  <p class="card-text" style="width: 50rem">
+                  <p class="card-text">
                     <b>Designation:</b> Software Engineer </br>
                     <b>Duration:</b> Dec,2013 - Dec,2015 </br>
                     <b>No. of Projects Assigned: </b>2
@@ -214,7 +238,7 @@
               <div class="card">
                 <div class="card-block">
                   <h4>Gamut Infosystems Ltd.</h4>
-                  <p class="card-text" style="width: 50rem">
+                  <p class="card-text">
                     <b>Designation:</b> Software Engineer </br>
                     <b>Duration:</b> Jul,2017 - Till Date </br>
                     <b>No. of Projects Assigned:</b> 1
@@ -232,28 +256,29 @@
 
   <div id="awards" class="container opac">
     <div class="row">
-      <div id="achievements" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-up-right">
+      <div id="achievements" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="zoom-in">
         <h4><span class="glyphicon glyphicon-certificate"></span> Achievements &amp; Awards</h4>
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="flip-left">
             <div id="award1" class="cards-inverse">
-              <img id="greenBelt" src="images/greenBelt.jpg" width="100%" data-toggle="modal" data-target="#myModal">
-              <i>(Double Click to View Certificate)</i>
+              <img id="greenBelt" src="images/greenBelt.jpg" class="img-rounded" width="100%" data-toggle="modal" data-target="#myModal">
+              <i>(Click to View Certificate)</i>
               <hr>
               <h5>iEvolve Green Belt Certificate</h5>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="flip-right">
             <div id="award2" class="cards-inverse">
-              <img id="kaizen" src="images/kaizen.jpg" width="100%" data-toggle="modal" data-target="#myModal2">
-              <i>(Double Click to View Certificate)</i>
+              <img id="kaizen" src="images/kaizen.jpg" class="img-rounded" width="100%" data-toggle="modal" data-target="#myModal2">
+              <i>(Click to View Certificate)</i>
               <hr>
               <h5>iEvolve Kaizen Certificate</h5>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" data-aos="flip-left">
             <div id="award3" class="cards-inverse">
-              <img id="pob" src="images/trophy.png" width="100%">
+              <img id="pob" src="images/trophy.png"  width="100%">
+            </br>
               <hr>
               <h5>Pat-on-the-Back Award</h5>
             </div>
@@ -298,6 +323,61 @@
     </div>
   </div>
   <!--Modal Ends here -->
+
+  <div id="contact" class="container opac">
+    <div class="row">
+      <div id="contDetails" class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 cards" data-aos="fade-up">
+        <h4><span class="glyphicon glyphicon-earphone"></span> Contact Details</h4>
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-aos="fade-up-right">
+            <div class="cards-inverse">
+              <img src="images/contactus.jpg" class="img-rounded" width="100%">
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" data-aos="fade-up-left">
+            <div class="cards-inverse">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <h5><b><span class="glyphicon glyphicon-user"></span> Name</b></h5>
+                </div>
+                <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+                    <h5>Souvik Roy</h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                    <h5><b><span class="glyphicon glyphicon-envelope"></span> Email</b></h5>
+                </div>
+                <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+                    <h5>souvikroy.it@gmail.com</h5>
+                </div>
+              </div>
+            <hr>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h5 align="center"><b><span class="glyphicon glyphicon-comment"></span> Connect me @</b></h5>
+                </div>
+                <div align="center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <a href="https://github.com/ssm-12" target="_blank"><i class="fa fa-github" style="font-size:4em"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/souvik_03/" target="_blank"><i class="fa fa-instagram" style="font-size:4em"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/souvik19911991" target="_blank"><i class="fa fa-facebook-square" style="font-size:4em"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+  </br>
+</br>
+</br>
+  </div>
+
+
+
 
 </div>
 

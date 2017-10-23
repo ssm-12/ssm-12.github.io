@@ -111,12 +111,11 @@ img {
   margin: 0 auto;
 }
 
-pre{
-  color: green;
-  background-color: black;
-
-}
 
 #greenBelt{
   margin-top: 0 !important;
+}
+
+#contactMe{
+  opacity: 100 !important;
 }
